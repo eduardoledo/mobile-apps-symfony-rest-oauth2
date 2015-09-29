@@ -4,6 +4,6 @@ This is a basic tutorial for creating from scratch a mobile app with OAuth2 auth
 
 #### Components
 We'll have three major components:
-1. [A service layer (Written in Symfony)](services/index.md)
-2. An Android app (in-progress)
-3. An iOS app (pending)
+- [A service layer (Written in Symfony)](services/index.md)
+- An Android app (in-progress)
+- An iOS app (pending)
