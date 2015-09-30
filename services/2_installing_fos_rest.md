@@ -9,7 +9,6 @@ $ composer install friendsofsymfony/rest-bundle
 ### Step 2 - Enable the bundle in AppKernel.php
 
 ```php
-// app/AppKernel.php
 <?php
 // app/AppKernel.php
 
