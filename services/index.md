@@ -35,12 +35,12 @@ Preparing project...
 #### And install the needed bundles:
 
 - [JMSSerializerBundle](1_installing_jms_serializer.md): Entity serialization/deserialization
- - [FOSRestBundle](2_installing_fos_rest.md): Automatic routing, etc.
- - [NelmioApiDocBundle](3_installing_nelmio_apidoc.md): API Automatic documentation
- - [FOSUserBundle](4_installing_fos_user.md): User management
- - [FOSOAuthServerBundle](5_installing_fos_oauthserver.md): OAuth2 authentication
+- [FOSRestBundle](2_installing_fos_rest.md): Automatic routing, etc.
+- [NelmioApiDocBundle](3_installing_nelmio_apidoc.md): API Automatic documentation
+- [FOSUserBundle](4_installing_fos_user.md): User management
+- [FOSOAuthServerBundle](5_installing_fos_oauthserver.md): OAuth2 authentication
 
- ### Step 2 - Creating the entities
- ### Step 3 - Creating the controllers
- ### Step 4 - Creating the routes
- ### Step 5 -
+### Step 2 - Creating the entities
+### Step 3 - Creating the controllers
+### Step 4 - Creating the routes
+### Step 5 - Creating basic API documentation
