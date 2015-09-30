@@ -31,6 +31,7 @@ fos_rest:
     view:
         view_response_listener: force
 ```
+---
 
 **Previous**: [Installing JMSSerializerBundle](1_installing_jms_serializer.md)
 
