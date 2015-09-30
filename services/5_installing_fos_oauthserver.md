@@ -206,6 +206,7 @@ fos_oauth_server:
         user_provider: fos_user.user_manager
 ```
 ### Step 8: Create a client
+Inside a controller methos we paste this code to create a client
 ```php
 <?php
 $clientManager = $this->getContainer()->get('fos_oauth_server.client_manager.default');
