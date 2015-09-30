@@ -1,12 +1,12 @@
 ## Installing [FOSRestBundle](https://github.com/FriendsOfSymfony/FOSRestBundle)
-### Step 1 - Install the bundle using composer
+### Step 1: Install the bundle using composer
 
 ```
 $ composer require friendsofsymfony/rest-bundle
 
 ```
 
-### Step 2 - Enable the bundle in AppKernel.php
+### Step 2: Enable the bundle in AppKernel.php
 
 ```php
 <?php
@@ -20,7 +20,7 @@ public function registerBundles()
     );
 }
 ```
-### Step 3 - Configure the bundle
+### Step 3: Configure the bundle
 ```yaml
 # app/config/config.yml
 fos_rest:

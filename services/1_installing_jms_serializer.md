@@ -1,12 +1,12 @@
 ## Installing [JMSSerializerBundle](https://github.com/schmittjoh/JMSSerializerBundle)
-### Step 1 - Install the bundle using composer
+### Step 1: Install the bundle using composer
 
 ```
 $ composer require jms/serializer-bundle
 
 ```
 
-### Step 2 - Enable the bundle in AppKernel.php
+### Step 2: Enable the bundle in AppKernel.php
 
 ```php
 <?php
@@ -20,7 +20,7 @@ public function registerBundles()
     );
 }
 ```
-### Step 3 - Configure the bundle
+### Step 3: Configure the bundle
 This bundle works right out of the box, without any special configuration, but we can tweak it a little. We'll override one of this bundle parameters so the serialized entities have exactly the same property names as the original ones.
 
 ```yaml

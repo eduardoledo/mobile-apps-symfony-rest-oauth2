@@ -2,14 +2,14 @@
 
 ## Installing [FOSUserBundle](https://github.com/nelmio/NelmioApiDocBundle)
 (This is a summary from the [official documentation](https://symfony.com/doc/master/bundles/FOSUserBundle/index.html))
-### Step 1 - Install the bundle using composer
+### Step 1: Install the bundle using composer
 
 ```
 $ composer require friendsofsymfony/user-bundle
 
 ```
 
-### Step 2 - Enable the bundle in AppKernel.php
+### Step 2: Enable the bundle in AppKernel.php
 
 ```php
 <?php
@@ -24,7 +24,7 @@ public function registerBundles()
 }
 ```
 
-### Step 3 - Create the User class:
+### Step 3: Create the User class:
 
 1. Extend the base User class (from the Model folder if you are using any of the doctrine variants, or Propel for propel 1.x)
 2. Map the id field. It must be protected as it is inherited from the parent class.
@@ -58,7 +58,7 @@ class User extends BaseUser
     }
 }
 ```
-### Step 4 - Configure security.yml
+### Step 4: Configure security.yml
 ```yaml
 security:
     encoders:
@@ -68,7 +68,7 @@ security:
             id: fos_user.user_provider.username
 ```
 
-### Step 5 - Configure the bundle
+### Step 5: Configure the bundle
 ```yaml
 # app/config/config.yml
 fos_user:

@@ -1,12 +1,12 @@
 ## Installing [NelmioApiDocBundle](https://github.com/nelmio/NelmioApiDocBundle)
-### Step 1 - Install the bundle using composer
+### Step 1: Install the bundle using composer
 
 ```
 $ composer require nelmio/api-doc-bundle
 
 ```
 
-### Step 2 - Enable the bundle in AppKernel.php
+### Step 2: Enable the bundle in AppKernel.php
 
 ```php
 <?php
@@ -21,7 +21,7 @@ public function registerBundles()
 }
 ```
 
-### Step 3 - Import the routing definition in routing.yml:
+### Step 3: Import the routing definition in routing.yml:
 ```yaml
 # app/config/routing.yml
 NelmioApiDocBundle:
@@ -29,7 +29,7 @@ NelmioApiDocBundle:
     prefix:   /api/doc
 ```
 
-### Step 4 - Configure the bundle
+### Step 4: Configure the bundle
 ```yaml
 # app/config/config.yml
 nelmio_api_doc: ~

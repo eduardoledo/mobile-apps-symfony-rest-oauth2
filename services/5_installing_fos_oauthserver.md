@@ -1,10 +1,11 @@
-# Install [FOSOAuthServerBundle](https://github.com/FriendsOfSymfony/FOSOAuthServerBundle)
-
+# Installing [FOSOAuthServerBundle](https://github.com/FriendsOfSymfony/FOSOAuthServerBundle)
+### Step 1: Install the bundle using composer
 ```
 $ composer install friendsofsymfony/oauth-server-bundle
 
 ```
-Then we enable the bundle in AppKernel.php
+### Step 2: Enable the bundle in AppKernel.php
+
 ```php
 <?php
 // app/AppKernel.php
@@ -17,7 +18,8 @@ public function registerBundles()
     );
 }
 ```
-And create the doctrine classes needed by the bundle:
+
+### Step 3: Create the doctrine classes needed by the bundle:
 ```php
 <?php
 // src/Acme/ApiBundle/Entity/Client.php
@@ -149,7 +151,7 @@ class AuthCode extends BaseAuthCode
 }
 
 ```
-Update our database with the new entities:
+### Step 4: Update the database schema with the new entities:
 ```bash
 $ app/console doctrine:schema:update --force
 
@@ -158,7 +160,7 @@ $ app/console doctrine:schema:update --force
 __Note__: If you don't have `auto_mapping` activated in your doctrine configuration you need to add
 `FOSOAuthServerBundle` to your mappings in `config.yml`.
 
-Now we configure the security.yml
+### Step 5: Configure the security.yml
 ```yaml
 # app/config/security.yml
 security:
@@ -180,7 +182,7 @@ security:
     access_control:
         - { path: ^/api, roles: [ IS_AUTHENTICATED_FULLY ] }
 ```
-Import the routing.yml configuration file in app/config/routing.yml:
+### Step 6: Import the routing.yml configuration
 
 ```yaml
 # app/config/routing.yml
@@ -189,12 +191,9 @@ fos_oauth_server_token:
 
 fos_oauth_server_authorize:
     resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
-
-
 ```
-Add FOSOAuthServerBundle settings in app/config/config.yml:
+### Step 7: Add FOSOAuthServerBundle settings
 ```yaml
-
 # app/config/config.yml
 fos_oauth_server:
     db_driver: orm       # Driver availables: orm, mongodb, or propel
@@ -206,7 +205,7 @@ fos_oauth_server:
     service:    # We use FOSUserBundle for the authentication
         user_provider: fos_user.user_manager
 ```
-And last, we create a client
+### Step 8: Create a client
 ```php
 <?php
 $clientManager = $this->getContainer()->get('fos_oauth_server.client_manager.default');
@@ -215,4 +214,4 @@ $client->setAllowedGrantTypes(array('token', 'authorization_code', 'password'));
 $clientManager->updateClient($client);
 
 ```
-We could also add a login with the [facebook user token](facebook_user_token_auth.md)
+__NOTE__: We could also add a login with the [facebook user token](5a_adding_facebook_user_token_auth.md)
