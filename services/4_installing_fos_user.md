@@ -93,4 +93,4 @@ $ app/console doctrine:schema:update --force
 
 **Previous**: [Installing NelmioApiDocBundle](3_installing_nelmio_apidoc.md)
 
-**Next**: [Installing FOSUserBundle](5_installing_fos_oauthserver.md)
+**Next**: [Installing FOSOAuthServerBundle](5_installing_fos_oauthserver.md)
