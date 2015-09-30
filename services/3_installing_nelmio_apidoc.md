@@ -47,4 +47,4 @@ framework:
 
 **Previous**: [Installing FOSRestBundle](2_installing_fos_rest.md)
 
-**Next**: [Installing NelmioApiDocBundle](4_installing_fos_user.md)
+**Next**: [Installing FOSUserBundle](4_installing_fos_user.md)
