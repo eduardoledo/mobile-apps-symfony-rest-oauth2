@@ -2,7 +2,7 @@
 ### Step 1 - Install the bundle using composer
 
 ```
-$ composer install friendsofsymfony/rest-bundle
+$ composer require friendsofsymfony/rest-bundle
 
 ```
 
@@ -22,6 +22,7 @@ public function registerBundles()
 ```
 ### Step 3 - Configure the bundle
 ```yaml
+# app/config/config.yml
 fos_rest:
     param_fetcher_listener: true
     body_listener: true
